@@ -1,0 +1,360 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    /* Definición de variables de color para usar en el diseño */
+    --primaryColor: #4e2b0a;
+    --backgroundColor: #ffbb94;
+    --secundarioColor: #F2E205;
+    --darkColor: #0D0D0D;
+    --Claro: #fff;
+}
+
+html {
+    /* Tamaño de fuente base y fuente del documento */
+    font-size: 62.5%;
+    font-family: 'Poppins', sans-serif;
+}
+
+* {
+    /* Reseteo de márgenes, rellenos y box-sizing para todos los elementos */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    /* Contenedor principal con un ancho máximo */
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+/* Header */
+.container_hero {
+    /* Fondo del encabezado */
+    background-color: var(--backgroundColor);
+}
+
+.hero {
+    /* Diseño flexible para el encabezado */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.customer_support {
+    /* Estilo para la sección de soporte al cliente */
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.customer_support i {
+    /* Tamaño del icono de soporte al cliente */
+    font-size: 3.3rem;
+}
+
+.content_customer_support {
+    /* Contenedor para el texto del soporte al cliente */
+    display: flex;
+    flex-direction: column;
+}
+
+.container_logo {
+    /* Estilo del contenedor del logo */
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.container_logo i {
+    /* Tamaño del icono del logo */
+    font-size: 3rem;
+}
+
+.container_logo h1 a {
+    /* Estilo del enlace del logo */
+    text-decoration: none;
+    color: #000;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: -1px;
+}
+
+.container_user {
+    /* Estilo del contenedor de usuario y carrito */
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.container_user .fa-user,
+.container_user .fa-basket-shopping {
+    /* Tamaño y color de los iconos de usuario y carrito */
+    font-size: 3rem;
+    color: var(--primaryColor);
+}
+
+.content_shopping_cart {
+    /* Estilo para el texto del carrito de compras */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.container_navbar {
+    /* Fondo de la barra de navegación (si se añade) */
+    background-color: var(--primaryColor);
+}
+
+.navbar {
+    /* Estilo de la barra de navegación */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 0;
+}
+
+/* Dropdown Menu */
+.menu {
+    /* Estilo del menú de navegación */
+    display: flex;
+    gap: 2rem;
+}
+
+.menu li {
+    /* Estilo para los elementos del menú */
+    list-style: none;
+    position: relative;
+}
+
+.menu a {
+    /* Estilo de los enlaces del menú */
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #000; /* Color de los enlaces del menú (negro) */
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.menu a:hover {
+    /* Color del enlace al pasar el ratón */
+    color: var(--secundarioColor);
+}
+
+.dropdown {
+    /* Estilo para el contenedor del menú desplegable */
+    position: relative;
+}
+
+.dropdown-toggle {
+    /* Estilo del enlace que activa el dropdown */
+    cursor: pointer;
+}
+
+.dropdown:hover .dropdown-menu {
+    /* Mostrar el menú desplegable al pasar el ratón sobre el contenedor */
+    display: flex; /* Cambio a flex para mostrar horizontalmente */
+}
+
+.dropdown-menu {
+    /* Estilo del menú desplegable */
+    display: none;
+    position: absolute;
+    background-color: var(--primaryColor);
+    list-style: none;
+    padding: 0.5rem 0;
+    border-radius: 0.5rem;
+    top: 100%;
+    left: 0;
+    flex-direction: row; /* Mostrar horizontalmente */
+}
+
+.dropdown-menu li {
+    /* Espacio horizontal entre los elementos del menú desplegable */
+    margin: 0 1rem;
+}
+
+.dropdown-menu a {
+    /* Estilo de los enlaces en el menú desplegable */
+    color: #fff; /* Blanco para contraste con el fondo */
+    text-decoration: none;
+    font-size: 1.4rem;
+    padding: 0.5rem 1rem; /* Espaciado alrededor del texto */
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    /* Color del enlace en el menú desplegable al pasar el ratón */
+    color: var(--secundarioColor);
+}
+
+/* Search Form */
+.search_form {
+    /* Estilo del formulario de búsqueda */
+    display: flex;
+    align-items: center;
+    border: 2px solid #000000;
+    border-radius: 2rem;
+    background-color:   #fff;
+    height: 4.4rem;
+    margin-left: auto;
+}
+
+.search_form input {
+    /* Estilo del campo de búsqueda */
+    outline: none;
+    border: none;
+    width: 25rem;
+    font-size: 1.4rem;
+    padding: 0 2rem;
+    color: dimgrey;
+}
+
+.search_form .btn_search {
+    /* Estilo del botón de búsqueda */
+    border: none;
+    background-color: var(--primaryColor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 1rem;
+}
+
+.btn_search i {
+    /* Tamaño y color del icono en el botón de búsqueda */
+    font-size: 2rem;
+    color: #ffffff;
+}
+
+/* Banner */
+.banner {
+    /* Estilo del banner */
+    background-color: honeydew;
+    height: 60rem;
+    background-size: cover;
+    background-position: center;
+}
+
+.content_banner {
+    /* Estilo del contenido del banner */
+    max-width: 90rem;
+    margin: 0 auto;
+    padding: 25rem 0;
+    text-align: center;
+}
+
+.content_banner p {
+    /* Estilo del texto en el banner */
+    font-size: 2rem;
+    color: var(--primaryColor);
+}
+
+.content_banner h2 {
+    /* Estilo del título en el banner */
+    font-size: 4rem;
+    color: var(--primaryColor);
+}
+
+.btn_banner {
+    /* Estilo del botón en el banner */
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 1rem 2rem;
+    background-color: var(--primaryColor);
+    color: var(--Claro);
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+}
+
+.btn_banner:hover {
+    /* Color del botón al pasar el ratón */
+    background-color: var(--secundarioColor);
+    color: var(--darkColor);
+}
+
+/* Sección Sobre Nosotros */
+#sobre-nosotros {
+    /* Estilo de la sección "Sobre Nosotros" */
+    padding: 4rem 2rem;
+    background-color: var(--backgroundColor);
+    text-align: center;
+}
+
+#sobre-nosotros h2 {
+    /* Estilo del título en "Sobre Nosotros" */
+    font-size: 3rem;
+    color: var(--primaryColor);
+}
+
+#sobre-nosotros p {
+    /* Estilo del texto en "Sobre Nosotros" */
+    font-size: 1.8rem;
+    color: var(--darkColor);
+}
+
+/* Sección de Productos */
+#productos {
+    /* Estilo de la sección de productos */
+    padding: 4rem 2rem;
+    background-color: var(--Claro);
+    text-align: center;
+}
+
+#productos h2 {
+    /* Estilo del título en la sección de productos */
+    font-size: 3rem;
+    color: var(--primaryColor);
+}
+
+.product-list {
+    /* Estilo de la lista de productos */
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.product-item {
+    /* Estilo de cada elemento de producto */
+    background-color: var(--backgroundColor);
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    padding: 2rem;
+}
+
+.product-item img {
+    /* Estilo de la imagen del producto */
+    max-width: 100%;
+    border-radius: 1rem;
+}
+
+.product-item h3 {
+    /* Estilo del título del producto */
+    font-size: 2rem;
+    color: var(--primaryColor);
+    margin: 1rem 0; 
+}
+
+.product-item p {
+    /* Estilo del texto del producto */
+    font-size: 1.4rem;
+    color: var(--darkColor);
+    margin-bottom: 1.5rem;
+}
+
+.btn_product {
+    /* Estilo del botón en la sección de productos */
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: var(--primaryColor);
+    color: var(--Claro);
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+}
+
+.btn_product:hover {
+}

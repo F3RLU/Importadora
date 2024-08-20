@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primaryColor: #4e2b0a; /* Color principal para botones y textos importantes */
+    --backgroundColor: #ffbb94; /* Color de fondo de los productos */
+    --secundarioColor: #F2E205; /* Color secundario para resaltar elementos */
+    --darkColor: #0D0D0D; /* Color de texto oscuro */
+    --Claro: #fff; /* Color de fondo claro para el texto */
+}
+
+html {
+    font-size: 62.5%; /* Tamaño de fuente base para usar rems más fácilmente */
+    font-family: 'Poppins', sans-serif; /* Fuente para el sitio */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sección del Header */
+header {
+    background-color: var(--backgroundColor); /* Fondo del encabezado */
+}
+
+/* Sección de Llantas */
+#llantas {
+    padding: 4rem 2rem;
+    background-color: var(--Claro); /* Fondo de la sección de llantas */
+    text-align: center; /* Centrar el texto */
+}
+
+#llantas h2 {
+    font-size: 3rem;
+    color: var(--primaryColor); /* Color del título de la sección */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; /* Centrar los productos en la pantalla */
+}
+
+.product-item {
+    border: 1px solid var(--primaryColor); /* Borde de cada producto */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--backgroundColor); /* Fondo del producto */
+    text-align: center; /* Centrar el texto dentro del producto */
+    width: 300px;
+}
+
+.product-item img {
+    max-width: 100%; /* Asegura que la imagen no se desborde */
+    border-radius: 0.5rem; /* Bordes redondeados para la imagen */
+}
+
+.product-item h3 {
+    font-size: 2rem;
+    color: var(--primaryColor); /* Color del título del producto */
+}
+
+.product-item p {
+    font-size: 1.6rem;
+    color: var(--darkColor); /* Color del texto de descripción del producto */
+}
+
+.btn_product {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primaryColor); /* Fondo del botón de producto */
+    color: var(--Claro); /* Color del texto del botón de producto */
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+
+.btn_product:hover {
+    background-color: var(--secundarioColor); /* Fondo del botón cuando se pasa el cursor */
+    color: var(--darkColor); /* Color del texto del botón cuando se pasa el cursor */
+}
+
+/* Sección del Footer */
+footer {
+    background-color: var(--backgroundColor);
+    padding: 2rem;
+    text-align: center; /* Centrar el texto en el pie de página */
+}
+
+footer .btn_back {
+    display: inline-block;
+    margin-bottom: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: var(--primaryColor); /* Fondo del botón de volver al inicio */
+    color: var(--Claro); /* Color del texto del botón de volver al inicio */
+    text-decoration: none;
+    font-size: 1.4rem;
+    border-radius: 1rem;
+}
+
+footer .btn_back:hover {
+    background-color: var(--secundarioColor); /* Fondo del botón cuando se pasa el cursor */
+    color: var(--darkColor); /* Color del texto del botón cuando se pasa el cursor */
+}

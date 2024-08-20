@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+:root {
+    --primaryColor: #4e2b0a; /* Color principal para botones y textos importantes */
+    --backgroundColor: #ffbb94; /* Color de fondo de los productos */
+    --secundarioColor: #F2E205; /* Color secundario para resaltar elementos */
+    --darkColor: #0D0D0D; /* Color de texto oscuro */
+    --Claro: #fff; /* Color de fondo claro para el texto */
+}
+
+html {
+    font-size: 62.5%; /* Tamaño de fuente base para usar rems más fácilmente */
+    font-family: 'Poppins', sans-serif; /* Fuente para el sitio */
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Sección del Header */
+header {
+    background-color: var(--backgroundColor); /* Fondo del encabezado */
+}
+
+/* Sección de Repuestos */
+#repuestos {
+    padding: 4rem 2rem;
+    background-color: var(--Claro); /* Fondo de la sección de repuestos */
+    text-align: center; /* Centrar el texto */
+}
+
+#repuestos h2 {
+    font-size: 3rem;
+    color: var(--primaryColor); /* Color del título de la sección */
+}
+
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center; /* Centrar los productos en la pantalla */
+}
+
+.product-item {
+    border: 1px solid var(--primaryColor); /* Borde de cada producto */
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: var(--backgroundColor); /* Fondo del producto */
+    text-align: center; /* Centrar el texto dentro del producto */
+    width:
+}
